@@ -152,6 +152,8 @@ class HBNBCommand(cmd.Cmd):
                 setattr(my_dict[key], line[2], line[3])
                 storage.save()
                 print(my_dict[key])
+            else:
+                print("** no instance found **")
 
     def default(self, args):
         """shortcuts
